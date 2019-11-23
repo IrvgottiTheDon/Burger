@@ -1,2 +1,8 @@
-insert into burgers (burger_name)
-values ('whopper'),('california'),('doublecheese')
+INSERT INTO burgers (burger_name)
+VALUES ("california cheeseburger");
+
+INSERT INTO burgers (burger_name)
+VALUES ("double cheeseburger");
+
+INSERT INTO burgers (burger_name)
+VALUES ("vegan burger");
