@@ -1,8 +1,12 @@
 CREATE DATABASE burgers_db;
+
 USE burgers_db;
 
-CREATE TABLE burgers (id int auto_increment primary key, 
-burgers_name varchar(255), 
-devoured boolean default 0,
-date TIMESTAMP
-primary key (id) );
+CREATE TABLE burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(100) NOT NULL,
+	devoured BOOLEAN DEFAULT false,
+	date TIMESTAMP DEFAULT now(),
+	PRIMARY KEY (id)
+);

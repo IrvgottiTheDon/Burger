@@ -1,5 +1,6 @@
-var connection = require("./connection.js");
+// Working Code
 
+var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
   var array = [];
@@ -7,7 +8,6 @@ function printQuestionMarks(num) {
   for (var i = 0; i < num; i++) {
     array.push("?");
   }
-
   return array.toString();
 }
 
@@ -63,8 +63,7 @@ var orm = {
 		queryString += condition;
 
 
-
-		connection.query(queryString, function(err, result) {
+    connection.query(queryString, function(err, result) {
 			if (err) {
 				throw err;
 			}
@@ -74,6 +73,8 @@ var orm = {
 };
 
 module.exports = orm;
+
+// Testing New Code
 
 // const mysql=require("mysql");
 // // const Mysql = function (connectionParam) {
